@@ -5,14 +5,14 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
 	name="denseblock",
-	version="1.0",
+	version="1.1",
 	author="Whitman Bohorquez",
 	author_email="whitman-2@hotmail.com",
 	description="Keras Extended Dense Layer",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
 	url="https://github.com/ElPapi42/DenseBlock",
-	download_url = 'https://github.com/ElPapi42/DenseBlock/archive/v1.0.tar.gz',
+	download_url = 'https://github.com/ElPapi42/DenseBlock/archive/v1.1.tar.gz',
 	keywords = ['Keras', 'Model', 'Plug And Play'],
 	packages=setuptools.find_packages(),
 	install_requires=[
