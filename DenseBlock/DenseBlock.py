@@ -5,7 +5,7 @@ class DenseBlock(tf.keras.Model):
   Dense Block
 
   Features Batch Normalization, Dropout and Dense layers, in that order
-  Created for convenient building of Deep Feedforward Networks
+  Created for convenient building of Complex Networks
 
   Args:
     units (int): Number of units on Dense Layer
@@ -27,9 +27,9 @@ class DenseBlock(tf.keras.Model):
     self.bn = tf.keras.layers.BatchNormalization()
     self.drop = tf.keras.layers.Dropout(dropout)
     self.dense = tf.keras.layers.Dense(units, 
-                                       activation,
-                                       kernel_regularizer=tf.keras.regularizers.L1L2(l2=l2),
-                                       kernel_constraint=tf.keras.constraints.UnitNorm())
+                                      activation, 
+                                      kernel_regularizer=tf.keras.regularizers.L1L2(l2=l2), 
+                                      kernel_constraint=tf.keras.constraints.UnitNorm())
     
   def call(self, inputs):
     """
