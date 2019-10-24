@@ -11,7 +11,9 @@ setuptools.setup(
 	description="Keras Extended Dense Layer",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://github.com/ElPapi42/DenseBlock-KerasPlugNPlay",
+	url="https://github.com/ElPapi42/DenseBlock",
+	download_url = 'https://github.com/ElPapi42/DenseBlock/archive/v1.0.tar.gz',
+	keywords = ['Keras', 'Model', 'Plug And Play'],
 	packages=setuptools.find_packages(),
 	install_requires=[
 		"tensorflow-gpu"
